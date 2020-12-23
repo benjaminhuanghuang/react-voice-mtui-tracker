@@ -21,3 +21,11 @@ https://github.com/adrianhajdin/speechly_expense_tracker_project
 
   npm i uuid
 ```
+
+
+## Points
+- useContext, useReducer
+
+- custom Hook
+
+- speeckly
