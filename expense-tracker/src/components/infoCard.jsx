@@ -1,4 +1,17 @@
-export { default as Details } from './Details/Details';
-export { default as Main } from './Main/Main';
-export { default as Snackbar } from './Snackbar/Snackbar';
-export { default as InfoCard } from './InfoCard';
+import React from 'react';
+
+const isIncome = Math.round(Math.random());
+
+const InfoCard = () => {
+  return (
+    <div elevation={3} style={{ textAlign: 'center', padding: '0 10%' }}>
+      Try saying: <br /> 
+      Add {isIncome ? 'Income ' : 'Expense '} 
+      for {isIncome ? '$100 ' : '$50 '}  
+      in Category {isIncome ? 'Salary ' : 'Travel '}
+      for {isIncome ? 'Monday ' : 'Thursday '}
+    </div>
+  );
+};
+
+export default InfoCard;
